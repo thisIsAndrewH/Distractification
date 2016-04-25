@@ -13,7 +13,6 @@
 		920AD2241CCEBBBF0099974C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920AD2221CCEBBBF0099974C /* Main.storyboard */; };
 		920AD22F1CCEBBBF0099974C /* slackMessagecounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD22E1CCEBBBF0099974C /* slackMessagecounterTests.swift */; };
 		920AD23A1CCEBBBF0099974C /* slackMessagecounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */; };
-		920AD2481CCEC13F0099974C /* EditorWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD2471CCEC13F0099974C /* EditorWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,6 @@
 		920AD2351CCEBBBF0099974C /* slackMessagecounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slackMessagecounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slackMessagecounterUITests.swift; sourceTree = "<group>"; };
 		920AD23B1CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		920AD2471CCEC13F0099974C /* EditorWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 				920AD2201CCEBBBF0099974C /* Assets.xcassets */,
 				920AD2221CCEBBBF0099974C /* Main.storyboard */,
 				920AD2251CCEBBBF0099974C /* Info.plist */,
-				920AD2471CCEC13F0099974C /* EditorWindow.swift */,
 			);
 			path = slackMessagecounter;
 			sourceTree = "<group>";
@@ -256,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				920AD21F1CCEBBBF0099974C /* ViewController.swift in Sources */,
-				920AD2481CCEC13F0099974C /* EditorWindow.swift in Sources */,
 				920AD21D1CCEBBBF0099974C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
