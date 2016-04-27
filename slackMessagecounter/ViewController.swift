@@ -22,12 +22,16 @@ class ViewController: NSViewController {
         }
     }
 
-    @IBOutlet weak var KeyCountField: NSTextField!
+
 
     @IBAction func someButton(sender: AnyObject) {
         let txt = "something"
-        KeyCountField.stringValue = txt
+//FIX:         KeyCountField.stringValue = txt
     }
+    
+    //TODO: make https://slack.com/api/search.messages?token=xoxp-3153534091-37521654836-37628781536-40cdbbe841&query=from:me after:2016-04-26&pretty=1 easier to adjust - specifically the date
+    //TODO: Add a date picker
+    //TODO: run last 7 days and last 1 day and display both
     
     
 }
