@@ -30,29 +30,4 @@ class ViewController: NSViewController {
     }
     
     
-    
-    
-    //Is this in the wrong place?
-    var direction:String = ""
-    
-    override func keyDown(theEvent: NSEvent) // A key is pressed
-    {
-        var keyNumber = theEvent.keyCode
-        
-        KeyCountField.stringValue = String(keyNumber)
-        
-        if theEvent.keyCode == 123
-        {
-            direction = "left" //get the pressed key
-        }
-        else if theEvent.keyCode == 124
-        {
-            direction = "right" //get the pressed key
-        }
-        else if theEvent.keyCode == 126
-        {
-            print("jump")
-        }
-    }
-    
 }
