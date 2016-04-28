@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "slackMessagecounter/ViewController.swift"
-            timestampString = "483566987.958151"
+            timestampString = "483570043.287786"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "querySlack(_:)"
             landmarkType = "5">
          </BreakpointContent>

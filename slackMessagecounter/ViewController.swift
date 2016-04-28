@@ -29,18 +29,39 @@ class ViewController: NSViewController {
 
 
     @IBAction func runButton(sender: AnyObject) {
-        dateDisplay.stringValue = setTime()
-        querySlack("2016-04-26")
+        dateDisplay.stringValue = getCurrentTime()
+        
+
+        querySlack(getQueryDate(7)) // query one week ago
+        querySlack(getQueryDate(0)) // query today
+        
     }
     
     
     //TODO: consider expanding this to return just the date or just the time based on a param
-    func setTime() -> String {
+    func getCurrentTime() -> String {
         let date = NSDate()
         let dateFormatter = NSDateFormatter()
+
         dateFormatter.dateFormat = "hh:mm:ss"
         
         return dateFormatter.stringFromDate(date)
+    }
+    
+    
+    //  Returns the date string for the API call
+    func getQueryDate(daysBehind: Int) -> String {
+        let userCalendar = NSCalendar.currentCalendar()
+        let periodComponents = NSDateComponents()
+            periodComponents.day = -daysBehind
+        
+        let searchDate = userCalendar.dateByAddingComponents(periodComponents, toDate: NSDate(), options: [])!
+        let dateFormatter = NSDateFormatter()
+            dateFormatter.dateFormat = "YYYY-MM-dd"
+        let dateReturn = dateFormatter.stringFromDate(searchDate)
+        
+        print(dateReturn)
+        return dateReturn
     }
     
     func querySlack(dateAfter: String) {
@@ -53,13 +74,12 @@ class ViewController: NSViewController {
             (data, error) -> Void in
             if error != nil {
                 print(error)
+                //TODO: display error if unsucessful
             } else {
                 print(data)
-                //TODO: Manipulate this somehow
+                //TODO: create method to handle the data retrieved
             }
         }
-        
-        
     }
     
     func httpGet(request: NSURLRequest!, callback: (String, String?) -> Void) {
