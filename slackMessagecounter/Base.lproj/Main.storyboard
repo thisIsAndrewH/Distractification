@@ -734,10 +734,10 @@
                                 <buttonCell key="cell" type="push" title="Run" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="g86-S2-q87">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="runButton:" target="XfG-lQ-9wD" id="b6y-5h-2Nj"/>
+                                    </connections>
                                 </buttonCell>
-                                <connections>
-                                    <action selector="someButton:" target="XfG-lQ-9wD" id="K10-JX-xFg"/>
-                                </connections>
                             </button>
                         </subviews>
                     </view>

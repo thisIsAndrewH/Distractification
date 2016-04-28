@@ -28,14 +28,13 @@ class ViewController: NSViewController {
     @IBOutlet weak var weekCount: NSTextField!
 
 
-    @IBAction func someButton(sender: AnyObject) {
+    @IBAction func runButton(sender: AnyObject) {
         dateDisplay.stringValue = setTime()
-        
         querySlack("2016-04-26")
     }
     
     
-//TODO: consider expanding this to return just the date or just the time based on a param
+    //TODO: consider expanding this to return just the date or just the time based on a param
     func setTime() -> String {
         let date = NSDate()
         let dateFormatter = NSDateFormatter()
@@ -45,8 +44,6 @@ class ViewController: NSViewController {
     }
     
     func querySlack(dateAfter: String) {
-//TODO: make https://slack.com/api/search.messages?token=xoxp-3153534091-37521654836-37628781536-40cdbbe841&query=from:me after:2016-04-26&pretty=1 easier to adjust - specifically the date
-
         //TODO: Move somewhere safe
         let token = "xoxp-3153534091-37521654836-37628781536-40cdbbe841"
         let endpoint = "https://slack.com/api/search.messages?token=" + token + "&pretty=1&query=from:me%20after:" + dateAfter
