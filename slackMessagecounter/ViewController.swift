@@ -32,8 +32,9 @@ class ViewController: NSViewController {
     @IBAction func runButton(sender: AnyObject) {
         dateDisplay.stringValue = getCurrentTime()
 
-        querySlack(getQueryDate(7)) // query one week ago
-        querySlack(getQueryDate(1)) // query today
+     //   querySlack(getQueryDate(7)) // query one week ago
+        let testInt = querySlack(getQueryDate(1)) // query today
+        
     }
     
     
@@ -63,7 +64,7 @@ class ViewController: NSViewController {
         return dateReturn
     }
     
-    func querySlack(dateAfter: String) {
+    func querySlack(dateAfter: String) -> Int {
         //TODO: Move somewhere safe
         let token = "xoxp-3153534091-37521654836-37628781536-40cdbbe841"
         let endpoint = "https://slack.com/api/search.messages?token=" + token + "&query=from:me%20after:" + dateAfter + "&pretty=1"
@@ -77,10 +78,21 @@ class ViewController: NSViewController {
                 print(error)
                 //TODO: display error if unsucessful
             } else {
-                print(data)
+                //print(data)
                 //TODO: create method to handle the data retrieved
+
+                if let dataFromString = data.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+                    let jsonData = JSON(data: dataFromString)
+                    let totalMessagesSent = jsonData["messages","pagination","total_count"].stringValue
+
+                    print(totalMessagesSent)
+                }
             }
         }
+        var someInt: Int
+        someInt = 3
+        
+        return someInt
     }
     
     func httpGet(request: NSURLRequest!, callback: (String, String?) -> Void) {
@@ -98,25 +110,7 @@ class ViewController: NSViewController {
         task.resume()
     }
     
-    func getCount(someData: NSData) {
-        var names = [String]()
-        
-        do {
-            let json = try NSJSONSerialization.JSONObjectWithData(someData, options: .AllowFragments)//(data, options: .AllowFragments)
-            
-            if let blogs = json["blogs"] as? [[String: AnyObject]] {
-                for blog in blogs {
-                    if let name = blog["name"] as? String {
-                        names.append(name)
-                    }
-                }
-            }
-        } catch {
-            print("error serializing JSON: \(error)")
-        }
-        
-        print(names) // ["Bloxus test", "Manila Test"]
-    }
+    
     
     
 }

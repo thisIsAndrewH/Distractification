@@ -10,59 +10,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "slackMessagecounter/ViewController.swift"
-            timestampString = "483587118.087931"
+            timestampString = "483588449.106656"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "getQueryDate(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "slackMessagecounter/ViewController.swift"
-            timestampString = "483587118.087931"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "querySlack(_:)"
             landmarkType = "5">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "slackMessagecounter.ViewController.querySlack (Swift.String) -&gt; ()"
                   moduleName = "slackMessagecounter"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewharris/Documents/Development/personal/slackMessageCounter/slackMessagecounter/ViewController.swift"
-                  timestampString = "483587123.47747"
+                  timestampString = "483587592.595698"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
                   offsetFromSymbolStart = "796">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "slackMessagecounter.ViewController.(querySlack (Swift.String) -&gt; ()).(closure #1)"
                   moduleName = "slackMessagecounter"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrewharris/Documents/Development/personal/slackMessageCounter/slackMessagecounter/ViewController.swift"
-                  timestampString = "483587123.477655"
+                  timestampString = "483587592.595856"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "766">
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "1233">
                </Location>
             </Locations>
          </BreakpointContent>
