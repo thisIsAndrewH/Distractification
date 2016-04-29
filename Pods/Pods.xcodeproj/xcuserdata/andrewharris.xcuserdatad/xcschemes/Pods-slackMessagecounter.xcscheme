@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1F4ED669FC089C2AA68E68D7'
+               BlueprintIdentifier = 'D00D275BDF926646CFDD5EA2'
                BlueprintName = 'Pods-slackMessagecounter'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_slackMessagecounter.framework'>
