@@ -33,11 +33,15 @@ class ViewController: NSViewController {
         dateDisplay.stringValue = getCurrentTime()
         
 
-        let queryDateToday = getQueryDate(1) // query today
-        let queryURLToday = createURL(queryDateToday)
-        data_request(queryURLToday)
-      
+        var queryDateToday = getQueryDate(1) // query today
+        var queryURLToday = createURL(queryDateToday)
+        data_request(queryURLToday, isDay: true)
         
+        queryDateToday = getQueryDate(7) // query today
+        queryURLToday = createURL(queryDateToday)
+        data_request(queryURLToday, isDay: false)
+      
+
         
         //Tests
         print("Date param: " + queryDateToday)
@@ -80,8 +84,9 @@ class ViewController: NSViewController {
         return request
     }
     
-    func getMessageCount(data: String) -> String {
+    func getMessageCount(data: String, isDay: Bool) -> String {
         var messageCount = ""
+        let isDayResponse = isDay
         if let dataFromString = data.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
             let jsonData = JSON(data: dataFromString)
             let totalMessagesSent = jsonData["messages","pagination","total_count"].stringValue
@@ -90,14 +95,22 @@ class ViewController: NSViewController {
             messageCount = totalMessagesSent
         }
         
-        setTodayCountDispaly(messageCount)
+        if isDayResponse == true {
+            setTodayCountDispaly(messageCount)
+        }
+        else {
+            setWeekCountDispaly(messageCount)
+        }
+        
         
         return messageCount
     }
     
-    func data_request(url_to_request: NSURL)
+    //isDay determines if we're updating the "day" or "week" field in the UI
+    func data_request(url_to_request: NSURL, isDay: Bool)
     {
         let url:NSURL = url_to_request
+        let isDayResponse = isDay
         let session = NSURLSession.sharedSession()
         
         let request = NSMutableURLRequest(URL: url)
@@ -117,9 +130,7 @@ class ViewController: NSViewController {
                 return
             }
             
-            let messageCountDispaly = self?.getMessageCount(dataString as String)
-            self!.todayCount.stringValue = messageCountDispaly!
-            
+            self?.getMessageCount(dataString as String, isDay: isDayResponse)
             
             //print(dataString)
             
@@ -131,6 +142,11 @@ class ViewController: NSViewController {
     func setTodayCountDispaly(count: String){
         todayCount.stringValue = count
         print("testing set today count func: " + count)
+    }
+    
+    func setWeekCountDispaly(count: String){
+        weekCount.stringValue = count
+        print("testing set week count func: " + count)
     }
 
     
