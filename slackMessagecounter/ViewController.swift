@@ -31,6 +31,7 @@ class ViewController: NSViewController {
 
     @IBAction func runButton(sender: AnyObject) {
         dateDisplay.stringValue = getCurrentTime()
+        
 
         let queryDateToday = getQueryDate(1) // query today
         let queryURLToday = createURL(queryDateToday)
@@ -88,8 +89,9 @@ class ViewController: NSViewController {
             //print("Total messages sent: " + totalMessagesSent)
             messageCount = totalMessagesSent
         }
-        //return totalMessagesSent
-        print ("Message count: " + messageCount)
+        
+        setTodayCountDispaly(messageCount)
+        
         return messageCount
     }
     
@@ -115,14 +117,20 @@ class ViewController: NSViewController {
                 return
             }
             
-            self?.getMessageCount(dataString as String)
+            let messageCountDispaly = self?.getMessageCount(dataString as String)
+            self!.todayCount.stringValue = messageCountDispaly!
             
-            print(dataString)
+            
+            //print(dataString)
             
         }
         
         task.resume()
-        
+    }
+    
+    func setTodayCountDispaly(count: String){
+        todayCount.stringValue = count
+        print("testing set today count func: " + count)
     }
 
     
