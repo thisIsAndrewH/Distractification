@@ -33,8 +33,7 @@ class ViewController: NSViewController {
         dateDisplay.stringValue = getCurrentTime()
 
      //   querySlack(getQueryDate(7)) // query one week ago
-        let testInt = querySlack(getQueryDate(1)) // query today
-        
+        querySlack(getQueryDate(1)) // query today
     }
     
     
@@ -64,7 +63,7 @@ class ViewController: NSViewController {
         return dateReturn
     }
     
-    func querySlack(dateAfter: String) -> Int {
+    func querySlack(dateAfter: String) -> String {
         //TODO: Move somewhere safe
         let token = "xoxp-3153534091-37521654836-37628781536-40cdbbe841"
         let endpoint = "https://slack.com/api/search.messages?token=" + token + "&query=from:me%20after:" + dateAfter + "&pretty=1"
@@ -72,45 +71,52 @@ class ViewController: NSViewController {
         let request = NSMutableURLRequest(URL: NSURL(string: endpoint)!)
         print(request)
        
+        
+        //NOTE: Anything in this can't bubble out for some reason. figure out why
+        var messageCount = "DELETE"
         httpGet(request){
-            (data, error) -> Void in
+            (data, error) -> String in
             if error != nil {
                 print(error)
                 //TODO: display error if unsucessful
             } else {
                 //print(data)
-                //TODO: create method to handle the data retrieved
-
-                if let dataFromString = data.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
-                    let jsonData = JSON(data: dataFromString)
-                    let totalMessagesSent = jsonData["messages","pagination","total_count"].stringValue
-
-                    print(totalMessagesSent)
-                }
+                messageCount = self.getMessageCount(data)
+                print("message count:" + messageCount)
+                
             }
+            return messageCount
         }
-        var someInt: Int
-        someInt = 3
-        
-        return someInt
+        print("after " + messageCount)
+        return messageCount
     }
     
-    func httpGet(request: NSURLRequest!, callback: (String, String?) -> Void) {
+    func getMessageCount(data: String) -> String {
+        var messageCount = ""
+        if let dataFromString = data.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+            let jsonData = JSON(data: dataFromString)
+            let totalMessagesSent = jsonData["messages","pagination","total_count"].stringValue
+            
+            //print("Total messages sent: " + totalMessagesSent)
+            messageCount = totalMessagesSent
+        }
+        //return totalMessagesSent
+        return messageCount
+    }
+    
+    func httpGet(request: NSURLRequest!, callback: (data: String, error: String?) -> String){
         let session = NSURLSession.sharedSession()
+        
         let task = session.dataTaskWithRequest(request){
             (data, response, error) -> Void in
             if error != nil {
-                callback("", error!.localizedDescription)
+                callback(data: "", error: error!.localizedDescription)
             } else {
-                let result = NSString(data: data!, encoding:
-                    NSASCIIStringEncoding)!
-                callback(result as String, nil)
+                let result = NSString(data: data!, encoding: NSASCIIStringEncoding)!
+                callback(data: result as String, error: nil)
             }
         }
         task.resume()
     }
-    
-    
-    
     
 }
