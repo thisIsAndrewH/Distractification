@@ -6,16 +6,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "slackMessagecounter/ViewController.swift"
-            timestampString = "483588449.106656"
+            timestampString = "483654531.136763"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "querySlack(_:)"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "data_request(_:isDay:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "slackMessagecounter/ViewController.swift"
+            timestampString = "483654531.136763"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "getMessageCount(_:isDay:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "slackMessagecounter/ViewController.swift"
-            timestampString = "483588880.59138"
+            timestampString = "483654592.038148"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "querySlack(_:)"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "getMessageCount(_:isDay:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

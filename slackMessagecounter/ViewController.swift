@@ -31,9 +31,21 @@ class ViewController: NSViewController {
 
     @IBAction func runButton(sender: AnyObject) {
         dateDisplay.stringValue = getCurrentTime()
+        
 
-     //   querySlack(getQueryDate(7)) // query one week ago
-        let testInt = querySlack(getQueryDate(1)) // query today
+        var queryDateToday = getQueryDate(1) // query today
+        var queryURLToday = createURL(queryDateToday)
+        data_request(queryURLToday, isDay: true)
+        
+        queryDateToday = getQueryDate(7) // query today
+        queryURLToday = createURL(queryDateToday)
+        data_request(queryURLToday, isDay: false)
+      
+
+        
+        //Tests
+        print("Date param: " + queryDateToday)
+        print("URL param: " + String(queryURLToday))
         
     }
     
@@ -60,57 +72,82 @@ class ViewController: NSViewController {
             dateFormatter.dateFormat = "YYYY-MM-dd"
         let dateReturn = dateFormatter.stringFromDate(searchDate)
         
-        print(dateReturn)
         return dateReturn
     }
     
-    func querySlack(dateAfter: String) -> Int {
+    func createURL(dateAfter: String) -> NSURL {
         //TODO: Move somewhere safe
         let token = "xoxp-3153534091-37521654836-37628781536-40cdbbe841"
         let endpoint = "https://slack.com/api/search.messages?token=" + token + "&query=from:me%20after:" + dateAfter + "&pretty=1"
+        let request = NSURL(string: endpoint)!
         
-        let request = NSMutableURLRequest(URL: NSURL(string: endpoint)!)
-        print(request)
-       
-        httpGet(request){
-            (data, error) -> Void in
-            if error != nil {
-                print(error)
-                //TODO: display error if unsucessful
-            } else {
-                //print(data)
-                //TODO: create method to handle the data retrieved
-
-                if let dataFromString = data.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
-                    let jsonData = JSON(data: dataFromString)
-                    let totalMessagesSent = jsonData["messages","pagination","total_count"].stringValue
-
-                    print(totalMessagesSent)
-                }
-            }
-        }
-        var someInt: Int
-        someInt = 3
-        
-        return someInt
+        return request
     }
     
-    func httpGet(request: NSURLRequest!, callback: (String, String?) -> Void) {
-        let session = NSURLSession.sharedSession()
-        let task = session.dataTaskWithRequest(request){
-            (data, response, error) -> Void in
-            if error != nil {
-                callback("", error!.localizedDescription)
-            } else {
-                let result = NSString(data: data!, encoding:
-                    NSASCIIStringEncoding)!
-                callback(result as String, nil)
-            }
+    func getMessageCount(data: String, isDay: Bool) -> String {
+        var messageCount = ""
+        let isDayResponse = isDay
+        if let dataFromString = data.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+            let jsonData = JSON(data: dataFromString)
+            let totalMessagesSent = jsonData["messages","pagination","total_count"].stringValue
+            
+            //print("Total messages sent: " + totalMessagesSent)
+            messageCount = totalMessagesSent
         }
+        
+        if isDayResponse == true {
+            setTodayCountDispaly(messageCount)
+        }
+        else {
+            setWeekCountDispaly(messageCount)
+        }
+        
+        
+        return messageCount
+    }
+    
+    //isDay determines if we're updating the "day" or "week" field in the UI
+    func data_request(url_to_request: NSURL, isDay: Bool)
+    {
+        let url:NSURL = url_to_request
+        let isDayResponse = isDay
+        let session = NSURLSession.sharedSession()
+        
+        let request = NSMutableURLRequest(URL: url)
+        request.HTTPMethod = "GET"
+        request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
+        
+        let task = session.dataTaskWithRequest(request) {
+            [weak self] (let data, let response, let error) in
+            
+            guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
+                print("error")
+                return
+            }
+            
+            guard let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding) else {
+                print("error")
+                return
+            }
+            
+            self?.getMessageCount(dataString as String, isDay: isDayResponse)
+            
+            //print(dataString)
+            
+        }
+        
         task.resume()
     }
     
+    func setTodayCountDispaly(count: String){
+        todayCount.stringValue = count
+        print("testing set today count func: " + count)
+    }
     
-    
+    func setWeekCountDispaly(count: String){
+        weekCount.stringValue = count
+        print("testing set week count func: " + count)
+    }
+
     
 }
