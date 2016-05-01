@@ -8,10 +8,7 @@
 
 import Cocoa
 
-class Config: NSObject {
-    struct Config {
-        static let slackApiToken = ""
-        static let googleAnalyticsToken = ""
-    }
-
+struct Config {
+    static let slackApiToken = ""
+    static let googleAnalyticsToken = ""
 }

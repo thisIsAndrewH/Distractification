@@ -69,7 +69,7 @@ class ViewController: NSViewController {
     
     func createURL(dateAfter: String) -> NSURL {
         //TODO: Move somewhere safe
-        let token = ""
+        let token = Config.slackApiToken
         let endpoint = "https://slack.com/api/search.messages?token=" + token + "&query=from:me%20after:" + dateAfter + "&pretty=1"
         let request = NSURL(string: endpoint)!
         

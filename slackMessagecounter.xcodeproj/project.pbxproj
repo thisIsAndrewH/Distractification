@@ -106,10 +106,10 @@
 			children = (
 				920AD21C1CCEBBBF0099974C /* AppDelegate.swift */,
 				920AD21E1CCEBBBF0099974C /* ViewController.swift */,
+				9260A3B01CD676A300545EE5 /* Config.swift */,
 				920AD2201CCEBBBF0099974C /* Assets.xcassets */,
 				920AD2221CCEBBBF0099974C /* Main.storyboard */,
 				920AD2251CCEBBBF0099974C /* Info.plist */,
-				9260A3B01CD676A300545EE5 /* Config.swift */,
 			);
 			path = slackMessagecounter;
 			sourceTree = "<group>";
