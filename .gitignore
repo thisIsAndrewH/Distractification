@@ -63,4 +63,4 @@ fastlane/screenshots
 fastlane/test_output
 
 # Specific files
-Config.swift
+slackMessagecounter/Config.swift
