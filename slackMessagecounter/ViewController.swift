@@ -135,9 +135,5 @@ class ViewController: NSViewController {
         }
         task.resume()
     }
-    
-    func setDayCount(count: String) -> Void{
-        todayCount.stringValue = count
-    }
 
 }
