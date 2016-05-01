@@ -92,15 +92,16 @@ class ViewController: NSViewController {
             messageCount = totalMessagesSent
         }
         
-        if isDayResponse == true {
-           todayCount.stringValue = messageCount
-            print("testing set today count func: " + messageCount)
+        dispatch_async(dispatch_get_main_queue()) {
+            if isDayResponse == true {
+                self.todayCount.stringValue = messageCount
+                print("testing set today count func: " + messageCount)
+            }
+            else {
+                self.weekCount.stringValue = messageCount
+                print("testing set week count func: " + messageCount)
+            }
         }
-        else {
-            weekCount.stringValue = messageCount
-            print("testing set week count func: " + messageCount)
-        }
-        
         
         return messageCount
     }
