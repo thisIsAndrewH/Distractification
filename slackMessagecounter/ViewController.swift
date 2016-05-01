@@ -30,9 +30,6 @@ class ViewController: NSViewController {
 
 
     @IBAction func runButton(sender: AnyObject) {
-        dateDisplay.stringValue = getCurrentTime()
-        
-
         var queryDateToday = getQueryDate(1) // query today
         var queryURLToday = createURL(queryDateToday)
         data_request(queryURLToday, isDay: true)
@@ -40,17 +37,13 @@ class ViewController: NSViewController {
         queryDateToday = getQueryDate(7) // query today
         queryURLToday = createURL(queryDateToday)
         data_request(queryURLToday, isDay: false)
-      
+        dateDisplay.stringValue = getCurrentTime()
 
-        
         //Tests
         print("Date param: " + queryDateToday)
         print("URL param: " + String(queryURLToday))
-        
     }
     
-    
-    //TODO: consider expanding this to return just the date or just the time based on a param
     func getCurrentTime() -> String {
         let date = NSDate()
         let dateFormatter = NSDateFormatter()
@@ -59,7 +52,6 @@ class ViewController: NSViewController {
         
         return dateFormatter.stringFromDate(date)
     }
-    
     
     //  Returns the date string for the API call
     func getQueryDate(daysBehind: Int) -> String {
@@ -96,10 +88,12 @@ class ViewController: NSViewController {
         }
         
         if isDayResponse == true {
-            setTodayCountDispaly(messageCount)
+           todayCount.stringValue = messageCount
+            print("testing set today count func: " + messageCount)
         }
         else {
-            setWeekCountDispaly(messageCount)
+            weekCount.stringValue = messageCount
+            print("testing set week count func: " + messageCount)
         }
         
         
@@ -131,23 +125,9 @@ class ViewController: NSViewController {
             }
             
             self?.getMessageCount(dataString as String, isDay: isDayResponse)
-            
             //print(dataString)
-            
         }
-        
         task.resume()
     }
-    
-    func setTodayCountDispaly(count: String){
-        todayCount.stringValue = count
-        print("testing set today count func: " + count)
-    }
-    
-    func setWeekCountDispaly(count: String){
-        weekCount.stringValue = count
-        print("testing set week count func: " + count)
-    }
 
-    
 }
