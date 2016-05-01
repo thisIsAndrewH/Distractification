@@ -75,9 +75,8 @@ class ViewController: NSViewController {
             exit(0)
         }
         
-        var request: NSURL
         let endpoint = "https://slack.com/api/search.messages?token=" + token + "&query=from:me%20after:" + dateAfter + "&pretty=1"
-        request = NSURL(string: endpoint)!
+        let request = NSURL(string: endpoint)!
         
         return request
     }
