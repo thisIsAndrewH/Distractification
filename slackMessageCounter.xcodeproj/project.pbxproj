@@ -472,7 +472,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = slackMessagecounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounter";
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessageCounter";
 				PRODUCT_NAME = slackMessageCounter.temp_caseinsensitive_rename;
 			};
 			name = Debug;
@@ -485,7 +485,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = slackMessagecounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounter";
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessageCounter";
 				PRODUCT_NAME = slackMessageCounter.temp_caseinsensitive_rename;
 			};
 			name = Release;
