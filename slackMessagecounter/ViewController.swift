@@ -107,6 +107,11 @@ class ViewController: NSViewController {
             }
         }
         
+        //Need to do last 1 hr test, not the last one day.
+        if isDayResponse == true && Int(messageCount) > Config.thresholdLimit {
+            showNotification(messageCount)
+        }
+        
         return messageCount
     }
     
@@ -138,6 +143,14 @@ class ViewController: NSViewController {
             //print(dataString)
         }
         task.resume()
+    }
+    
+    func showNotification(count: String) -> Void {
+        let notification = NSUserNotification()
+        notification.title = "Message Warning"
+        notification.informativeText = "You have sent a lot of messages in the last hour (" + count + "). Chill out."
+        notification.hasActionButton = false
+        NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
     }
 
 }
