@@ -642,7 +642,11 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
+<<<<<<< HEAD
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="slackMessageCounter" customModuleProvider="target"/>
+=======
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="slackMessageCounter" customModuleProvider="target"/>
+>>>>>>> f3c3cb7e62858825cecf450e66b07fbf0e6a29d0
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -668,7 +672,11 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
+<<<<<<< HEAD
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="slackMessageCounter" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="slackMessageCounter" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> f3c3cb7e62858825cecf450e66b07fbf0e6a29d0
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
