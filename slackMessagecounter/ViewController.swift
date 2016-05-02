@@ -9,6 +9,7 @@
 
 import Cocoa
 import SwiftyJSON
+import Foundation
 
 class ViewController: NSViewController {
 
@@ -27,7 +28,34 @@ class ViewController: NSViewController {
     @IBOutlet weak var dateDisplay: NSTextField!
     @IBOutlet weak var todayCount: NSTextField!
     @IBOutlet weak var weekCount: NSTextField!
+    
+    var timerOn: Bool = false
 
+    @IBOutlet weak var startStopButton: NSButtonCell!
+    @IBAction func startStopTimer(sender: AnyObject) {
+        var slackTimer = NSTimer()
+        
+        //slackTimer = NSTimer.scheduledTimerWithTimeInterval(60, invocation: "runButton", repeats: true)
+        //slackTimer = NSTimer.scheduledTimerWithTimeInterval(60, invocation: Selector("doThis()"), repeats: true)
+        
+        
+        if timerOn {
+            //stopping the timer
+            slackTimer.invalidate()
+            
+            timerOn = false
+            startStopButton.title = "Start"
+        }
+        else {
+            //starting the timer
+            slackTimer.fire()
+            
+            
+            timerOn = true
+            startStopButton.title = "Stop"
+        }
+        
+    }
 
     @IBAction func runButton(sender: AnyObject) {
         var queryDateToday = getQueryDate(1) // query today
@@ -39,6 +67,21 @@ class ViewController: NSViewController {
         data_request(queryURLToday, isDay: false)
         dateDisplay.stringValue = getCurrentTime()
 
+        //Tests
+        print("Date param: " + queryDateToday)
+        print("URL param: " + String(queryURLToday))
+    }
+    
+    func doThis() {
+        var queryDateToday = getQueryDate(1) // query today
+        var queryURLToday = createURL(queryDateToday)
+        data_request(queryURLToday, isDay: true)
+        
+        queryDateToday = getQueryDate(7) // query today
+        queryURLToday = createURL(queryDateToday)
+        data_request(queryURLToday, isDay: false)
+        dateDisplay.stringValue = getCurrentTime()
+        
         //Tests
         print("Date param: " + queryDateToday)
         print("URL param: " + String(queryURLToday))

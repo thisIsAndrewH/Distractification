@@ -742,10 +742,21 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2hD-dF-a2U">
+                                <rect key="frame" x="14" y="13" width="70" height="32"/>
+                                <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QEZ-cl-JpC">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="startStopTimer:" target="XfG-lQ-9wD" id="opx-4r-ENp"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="IzM-qm-B4w" firstAttribute="leading" secondItem="nIq-ET-eKE" secondAttribute="trailing" constant="15" id="3rN-S1-W4O"/>
                             <constraint firstItem="nIq-ET-eKE" firstAttribute="top" secondItem="0Zp-xu-iHM" secondAttribute="bottom" constant="12" id="578-Ug-TXc"/>
+                            <constraint firstItem="2hD-dF-a2U" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="69B-gZ-kq6"/>
                             <constraint firstItem="N95-gs-JzR" firstAttribute="leading" secondItem="0Zp-xu-iHM" secondAttribute="trailing" constant="15" id="6R4-oL-MlY"/>
                             <constraint firstItem="Zjb-Dp-RgL" firstAttribute="top" secondItem="IzM-qm-B4w" secondAttribute="bottom" constant="15" id="77H-Oe-3ip"/>
                             <constraint firstItem="IzM-qm-B4w" firstAttribute="width" secondItem="N95-gs-JzR" secondAttribute="width" id="9Kc-eT-gNe"/>
@@ -765,10 +776,12 @@
                             <constraint firstAttribute="bottom" secondItem="k5C-15-O7p" secondAttribute="bottom" constant="20" id="n50-Na-w2V"/>
                             <constraint firstItem="N95-gs-JzR" firstAttribute="top" secondItem="dNx-PM-eZi" secondAttribute="bottom" constant="59" id="vRo-kg-egh"/>
                             <constraint firstItem="it8-6H-a60" firstAttribute="top" secondItem="nIq-ET-eKE" secondAttribute="bottom" constant="15" id="wOq-BR-xtO"/>
+                            <constraint firstAttribute="bottom" secondItem="2hD-dF-a2U" secondAttribute="bottom" constant="20" id="yVb-1F-bvY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dateDisplay" destination="Zjb-Dp-RgL" id="GE4-fh-dSQ"/>
+                        <outlet property="startStopButton" destination="QEZ-cl-JpC" id="G0r-79-pRq"/>
                         <outlet property="todayCount" destination="IzM-qm-B4w" id="9tu-Jf-X5w"/>
                         <outlet property="weekCount" destination="N95-gs-JzR" id="ia2-Ef-zC8"/>
                     </connections>
