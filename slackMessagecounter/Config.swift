@@ -9,6 +9,6 @@
 import Cocoa
 
 struct Config {
-    static let slackApiToken = ""
+    static let slackApiToken = "xoxp-3153534091-37521654836-37628781536-40cdbbe841"
     static let googleAnalyticsToken = ""
 }
