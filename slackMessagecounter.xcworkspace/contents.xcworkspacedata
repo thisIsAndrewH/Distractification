@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:slackMessagecounter.xcodeproj">
+      location = "group:/Users/andrewharris/Documents/Development/personal/slackMessageCounter/slackMessageCounter.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

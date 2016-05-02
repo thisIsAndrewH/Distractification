@@ -37,16 +37,16 @@
 /* Begin PBXFileReference section */
 		31BAC927AB79CD68E7CD1C1A /* Pods_slackMessagecounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_slackMessagecounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79823ECFB6984E2A544D15F5 /* Pods-slackMessagecounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-slackMessagecounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-slackMessagecounter/Pods-slackMessagecounter.release.xcconfig"; sourceTree = "<group>"; };
-		920AD2191CCEBBBF0099974C /* slackMessagecounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slackMessagecounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		920AD2191CCEBBBF0099974C /* slackMessageCounter.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slackMessageCounter.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		920AD21C1CCEBBBF0099974C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		920AD21E1CCEBBBF0099974C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		920AD2201CCEBBBF0099974C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		920AD2231CCEBBBF0099974C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		920AD2251CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		920AD22A1CCEBBBF0099974C /* slackMessagecounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slackMessagecounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		920AD22A1CCEBBBF0099974C /* slackMessageCounter.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slackMessageCounter.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		920AD22E1CCEBBBF0099974C /* slackMessagecounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slackMessagecounterTests.swift; sourceTree = "<group>"; };
 		920AD2301CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		920AD2351CCEBBBF0099974C /* slackMessagecounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slackMessagecounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		920AD2351CCEBBBF0099974C /* slackMessageCounter.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slackMessageCounter.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slackMessagecounterUITests.swift; sourceTree = "<group>"; };
 		920AD23B1CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9260A3B01CD676A300545EE5 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -94,9 +94,9 @@
 		920AD21A1CCEBBBF0099974C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				920AD2191CCEBBBF0099974C /* slackMessagecounter.app */,
-				920AD22A1CCEBBBF0099974C /* slackMessagecounterTests.xctest */,
-				920AD2351CCEBBBF0099974C /* slackMessagecounterUITests.xctest */,
+				920AD2191CCEBBBF0099974C /* slackMessageCounter.temp_caseinsensitive_rename.app */,
+				920AD22A1CCEBBBF0099974C /* slackMessageCounter.temp_caseinsensitive_rename.xctest */,
+				920AD2351CCEBBBF0099974C /* slackMessageCounter.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 			);
 			name = slackMessagecounter;
 			productName = slackMessagecounter;
-			productReference = 920AD2191CCEBBBF0099974C /* slackMessagecounter.app */;
+			productReference = 920AD2191CCEBBBF0099974C /* slackMessageCounter.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 		920AD2291CCEBBBF0099974C /* slackMessagecounterTests */ = {
@@ -187,7 +187,7 @@
 			);
 			name = slackMessagecounterTests;
 			productName = slackMessagecounterTests;
-			productReference = 920AD22A1CCEBBBF0099974C /* slackMessagecounterTests.xctest */;
+			productReference = 920AD22A1CCEBBBF0099974C /* slackMessageCounter.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		920AD2341CCEBBBF0099974C /* slackMessagecounterUITests */ = {
@@ -205,7 +205,7 @@
 			);
 			name = slackMessagecounterUITests;
 			productName = slackMessagecounterUITests;
-			productReference = 920AD2351CCEBBBF0099974C /* slackMessagecounterUITests.xctest */;
+			productReference = 920AD2351CCEBBBF0099974C /* slackMessageCounter.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -231,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 920AD2141CCEBBBF0099974C /* Build configuration list for PBXProject "slackMessagecounter" */;
+			buildConfigurationList = 920AD2141CCEBBBF0099974C /* Build configuration list for PBXProject "slackMessageCounter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -470,7 +470,7 @@
 				INFOPLIST_FILE = slackMessagecounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounter";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = slackMessageCounter.temp_caseinsensitive_rename;
 			};
 			name = Debug;
 		};
@@ -483,7 +483,7 @@
 				INFOPLIST_FILE = slackMessagecounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounter";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = slackMessageCounter.temp_caseinsensitive_rename;
 			};
 			name = Release;
 		};
@@ -495,8 +495,8 @@
 				INFOPLIST_FILE = slackMessagecounterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounterTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slackMessagecounter.app/Contents/MacOS/slackMessagecounter";
+				PRODUCT_NAME = slackMessageCounter.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slackMessageCounter.temp_caseinsensitive_rename.app/Contents/MacOS/slackMessageCounter.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -508,8 +508,8 @@
 				INFOPLIST_FILE = slackMessagecounterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounterTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slackMessagecounter.app/Contents/MacOS/slackMessagecounter";
+				PRODUCT_NAME = slackMessageCounter.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slackMessageCounter.temp_caseinsensitive_rename.app/Contents/MacOS/slackMessageCounter.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -520,7 +520,7 @@
 				INFOPLIST_FILE = slackMessagecounterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = slackMessageCounter.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = slackMessagecounter;
 			};
 			name = Debug;
@@ -532,7 +532,7 @@
 				INFOPLIST_FILE = slackMessagecounterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounterUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = slackMessageCounter.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = slackMessagecounter;
 			};
 			name = Release;
@@ -540,7 +540,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		920AD2141CCEBBBF0099974C /* Build configuration list for PBXProject "slackMessagecounter" */ = {
+		920AD2141CCEBBBF0099974C /* Build configuration list for PBXProject "slackMessageCounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920AD23C1CCEBBBF0099974C /* Debug */,
