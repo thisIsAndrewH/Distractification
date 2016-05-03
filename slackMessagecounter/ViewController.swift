@@ -60,7 +60,7 @@ class ViewController: NSViewController {
         dateDisplay.stringValue = getCurrentTime()
 
         //Tests
-        print("Date param: " + queryDateToday)
+        print("Time: " + dateDisplay.stringValue)
         print("URL param: " + String(queryURLToday))
         print("Slack Timer: " + String(slackTimer.valid))
     }
