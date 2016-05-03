@@ -9,7 +9,6 @@
 
 import Cocoa
 import SwiftyJSON
-import Foundation
 
 class ViewController: NSViewController {
 
