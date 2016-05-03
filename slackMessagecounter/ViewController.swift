@@ -126,7 +126,7 @@ class ViewController: NSViewController {
             }
         }
         
-        //Need to do last 1 hr test, not the last one day.
+        //Checks if you're over the limit
         if isDayResponse == true && Int(messageCount) > Config.thresholdLimit {
             showNotification(messageCount)
         }
