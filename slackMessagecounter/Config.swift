@@ -11,4 +11,6 @@ import Cocoa
 struct Config {
     static let slackApiToken = ""
     static let googleAnalyticsToken = ""
+    static let thresholdLimit = 200 //number of messages sent a day - over produces notification
+    static let timerMinutes = 60 //seconds
 }

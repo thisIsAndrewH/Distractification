@@ -30,31 +30,23 @@ class ViewController: NSViewController {
     @IBOutlet weak var weekCount: NSTextField!
     
     var timerOn: Bool = false
+    var slackTimer = NSTimer()
 
     @IBOutlet weak var startStopButton: NSButtonCell!
     @IBAction func startStopTimer(sender: AnyObject) {
-        var slackTimer = NSTimer()
-        
-        //slackTimer = NSTimer.scheduledTimerWithTimeInterval(60, invocation: "runButton", repeats: true)
-        //slackTimer = NSTimer.scheduledTimerWithTimeInterval(60, invocation: Selector("doThis()"), repeats: true)
-        
-        
         if timerOn {
             //stopping the timer
             slackTimer.invalidate()
-            
             timerOn = false
             startStopButton.title = "Start"
         }
         else {
             //starting the timer
+            slackTimer = NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: #selector(ViewController.runButton(_:)), userInfo: nil, repeats: true)
             slackTimer.fire()
-            
-            
             timerOn = true
             startStopButton.title = "Stop"
         }
-        
     }
 
     @IBAction func runButton(sender: AnyObject) {
@@ -70,6 +62,12 @@ class ViewController: NSViewController {
         //Tests
         print("Date param: " + queryDateToday)
         print("URL param: " + String(queryURLToday))
+        print("Slack Timer: " + String(slackTimer.valid))
+    }
+    
+    func createTimer() {
+        //do things before any other execution
+        
     }
     
     func doThis() {
@@ -85,6 +83,7 @@ class ViewController: NSViewController {
         //Tests
         print("Date param: " + queryDateToday)
         print("URL param: " + String(queryURLToday))
+        print("Slack Timer: " + String(slackTimer.valid))
     }
     
     func getCurrentTime() -> String {
