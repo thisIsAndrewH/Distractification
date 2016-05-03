@@ -42,7 +42,7 @@ class ViewController: NSViewController {
         }
         else {
             //starting the timer
-            slackTimer = NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: #selector(ViewController.runButton(_:)), userInfo: nil, repeats: true)
+            slackTimer = NSTimer.scheduledTimerWithTimeInterval(Config.timerSeconds, target: self, selector: #selector(ViewController.runButton(_:)), userInfo: nil, repeats: true)
             slackTimer.fire()
             timerOn = true
             startStopButton.title = "Stop"
@@ -65,32 +65,10 @@ class ViewController: NSViewController {
         print("Slack Timer: " + String(slackTimer.valid))
     }
     
-    func createTimer() {
-        //do things before any other execution
-        
-    }
-    
-    func doThis() {
-        var queryDateToday = getQueryDate(1) // query today
-        var queryURLToday = createURL(queryDateToday)
-        data_request(queryURLToday, isDay: true)
-        
-        queryDateToday = getQueryDate(7) // query today
-        queryURLToday = createURL(queryDateToday)
-        data_request(queryURLToday, isDay: false)
-        dateDisplay.stringValue = getCurrentTime()
-        
-        //Tests
-        print("Date param: " + queryDateToday)
-        print("URL param: " + String(queryURLToday))
-        print("Slack Timer: " + String(slackTimer.valid))
-    }
-    
     func getCurrentTime() -> String {
         let date = NSDate()
         let dateFormatter = NSDateFormatter()
-
-        dateFormatter.dateFormat = "hh:mm:ss"
+            dateFormatter.dateFormat = "hh:mm:ss"
         
         return dateFormatter.stringFromDate(date)
     }
