@@ -1,16 +1,25 @@
 # Slack Message Counter #
 **Goal:** To gain a better understanding of how often messages are sent in a given day or week.
+
+## Features
+* Queries message count of last week and last day
+* Runs on demand or on a schedule 
+	* Default: every hour
+	* Configurable: Yes
+* Alerts user if over threshold
+	* Default: 200 messages per day
+	* Configuarable: Yes
+
+## TODO
+* Add user authentication
+* Review/adjust to Slack guidlines and submit app for review
+* Replace branding
+* Resolve project naming issues
+
 ## How To
 To run this app, you must create a test API token from the Slack development page. [https://api.slack.com/docs/oauth-test-tokens](https://api.slack.com/docs/oauth-test-tokens) (Future OAuth TBD.)
 
 Add your token to the Config.swift file before running.
-
-## TODO
-* Add schedule to run automatically
-* Define thresholds for alerts
-* Implement notifications
-* Add user authentication
-* Review/adjust to Slack guidlines and submit app for review
 
 ## Help?
 If interested in helping, please email me for collaboration: <aharris86@gmail.com>
