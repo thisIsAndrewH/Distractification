@@ -3,18 +3,12 @@
 
 ## Features
 * Queries message count of last week and last day
-* Runs on demand or on a schedule 
+* Runs on demand or on a schedule
 	* Default: every hour
 	* Configurable: Yes
 * Alerts user if over threshold
 	* Default: 200 messages per day
-	* Configuarable: Yes
-
-## TODO
-* Add user authentication
-* Review/adjust to Slack guidlines and submit app for review
-* Replace branding
-* Resolve project naming issues
+	* Configurable: Yes
 
 ## How To
 To run this app, you must create a test API token from the Slack development page. [https://api.slack.com/docs/oauth-test-tokens](https://api.slack.com/docs/oauth-test-tokens) (Future OAuth TBD.)
