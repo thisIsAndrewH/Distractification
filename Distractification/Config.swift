@@ -1,6 +1,6 @@
 //
 //  Config.swift
-//  slackMessagecounter
+//  Distractification
 //
 //  Created by Andrew Harris on 5/1/16.
 //  Copyright © 2016 Andrew Harris. All rights reserved.

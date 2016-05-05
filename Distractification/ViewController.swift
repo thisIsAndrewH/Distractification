@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  slackMessagecounter
+//  Distractification
 //
 //  Created by Andrew Harris on 4/25/16.
 //  Copyright © 2016 Andrew Harris. All rights reserved.
