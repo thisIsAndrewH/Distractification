@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		920AD2181CCEBBBF0099974C /* slackMessagecounter */ = {
+		920AD2181CCEBBBF0099974C /* Distractification */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 920AD23E1CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounter" */;
+			buildConfigurationList = 920AD23E1CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "Distractification" */;
 			buildPhases = (
 				3FC21873924A592AE60BDBA5 /* Check Pods Manifest.lock */,
 				920AD2151CCEBBBF0099974C /* Sources */,
@@ -170,14 +170,14 @@
 			);
 			dependencies = (
 			);
-			name = slackMessagecounter;
+			name = Distractification;
 			productName = slackMessagecounter;
 			productReference = 920AD2191CCEBBBF0099974C /* Distractification.app */;
 			productType = "com.apple.product-type.application";
 		};
-		920AD2291CCEBBBF0099974C /* slackMessagecounterTests */ = {
+		920AD2291CCEBBBF0099974C /* DistractificationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 920AD2411CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounterTests" */;
+			buildConfigurationList = 920AD2411CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "DistractificationTests" */;
 			buildPhases = (
 				920AD2261CCEBBBF0099974C /* Sources */,
 				920AD2271CCEBBBF0099974C /* Frameworks */,
@@ -188,14 +188,14 @@
 			dependencies = (
 				920AD22C1CCEBBBF0099974C /* PBXTargetDependency */,
 			);
-			name = slackMessagecounterTests;
+			name = DistractificationTests;
 			productName = slackMessagecounterTests;
 			productReference = 920AD22A1CCEBBBF0099974C /* Distractification.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		920AD2341CCEBBBF0099974C /* slackMessagecounterUITests */ = {
+		920AD2341CCEBBBF0099974C /* DistractificationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 920AD2441CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounterUITests" */;
+			buildConfigurationList = 920AD2441CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "DistractificationUITests" */;
 			buildPhases = (
 				920AD2311CCEBBBF0099974C /* Sources */,
 				920AD2321CCEBBBF0099974C /* Frameworks */,
@@ -206,7 +206,7 @@
 			dependencies = (
 				920AD2371CCEBBBF0099974C /* PBXTargetDependency */,
 			);
-			name = slackMessagecounterUITests;
+			name = DistractificationUITests;
 			productName = slackMessagecounterUITests;
 			productReference = 920AD2351CCEBBBF0099974C /* Distractification.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -247,9 +247,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				920AD2181CCEBBBF0099974C /* slackMessagecounter */,
-				920AD2291CCEBBBF0099974C /* slackMessagecounterTests */,
-				920AD2341CCEBBBF0099974C /* slackMessagecounterUITests */,
+				920AD2181CCEBBBF0099974C /* Distractification */,
+				920AD2291CCEBBBF0099974C /* DistractificationTests */,
+				920AD2341CCEBBBF0099974C /* DistractificationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -360,12 +360,12 @@
 /* Begin PBXTargetDependency section */
 		920AD22C1CCEBBBF0099974C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 920AD2181CCEBBBF0099974C /* slackMessagecounter */;
+			target = 920AD2181CCEBBBF0099974C /* Distractification */;
 			targetProxy = 920AD22B1CCEBBBF0099974C /* PBXContainerItemProxy */;
 		};
 		920AD2371CCEBBBF0099974C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 920AD2181CCEBBBF0099974C /* slackMessagecounter */;
+			target = 920AD2181CCEBBBF0099974C /* Distractification */;
 			targetProxy = 920AD2361CCEBBBF0099974C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -552,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		920AD23E1CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounter" */ = {
+		920AD23E1CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "Distractification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920AD23F1CCEBBBF0099974C /* Debug */,
@@ -561,7 +561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		920AD2411CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounterTests" */ = {
+		920AD2411CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "DistractificationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920AD2421CCEBBBF0099974C /* Debug */,
@@ -570,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		920AD2441CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounterUITests" */ = {
+		920AD2441CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "DistractificationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920AD2451CCEBBBF0099974C /* Debug */,
