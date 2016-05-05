@@ -85,7 +85,7 @@
 		920AD2101CCEBBBF0099974C = {
 			isa = PBXGroup;
 			children = (
-				920AD21B1CCEBBBF0099974C /* slackMessageCounter */,
+				920AD21B1CCEBBBF0099974C /* Distractification */,
 				920AD22D1CCEBBBF0099974C /* DistractificationTests */,
 				920AD2381CCEBBBF0099974C /* DistractificationUITests */,
 				920AD21A1CCEBBBF0099974C /* Products */,
@@ -104,7 +104,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		920AD21B1CCEBBBF0099974C /* slackMessageCounter */ = {
+		920AD21B1CCEBBBF0099974C /* Distractification */ = {
 			isa = PBXGroup;
 			children = (
 				920AD21C1CCEBBBF0099974C /* AppDelegate.swift */,
@@ -114,7 +114,6 @@
 				920AD2221CCEBBBF0099974C /* Main.storyboard */,
 				920AD2251CCEBBBF0099974C /* Info.plist */,
 			);
-			name = slackMessageCounter;
 			path = Distractification;
 			sourceTree = "<group>";
 		};
