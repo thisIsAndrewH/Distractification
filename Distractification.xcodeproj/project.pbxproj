@@ -83,8 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				920AD21B1CCEBBBF0099974C /* slackMessageCounter */,
-				920AD22D1CCEBBBF0099974C /* slackMessageCounterTests */,
-				920AD2381CCEBBBF0099974C /* slackMessageCounterUITests */,
+				920AD22D1CCEBBBF0099974C /* DistractificationTests */,
+				920AD2381CCEBBBF0099974C /* DistractificationUITests */,
 				920AD21A1CCEBBBF0099974C /* Products */,
 				B669677E68006D2A75D4AFA7 /* Pods */,
 				A18DF890F48B017E6D23D52D /* Frameworks */,
@@ -115,24 +115,22 @@
 			path = Distractification;
 			sourceTree = "<group>";
 		};
-		920AD22D1CCEBBBF0099974C /* slackMessageCounterTests */ = {
+		920AD22D1CCEBBBF0099974C /* DistractificationTests */ = {
 			isa = PBXGroup;
 			children = (
 				920AD22E1CCEBBBF0099974C /* slackMessagecounterTests.swift */,
 				920AD2301CCEBBBF0099974C /* Info.plist */,
 			);
-			name = slackMessageCounterTests;
-			path = slackMessagecounterTests;
+			path = DistractificationTests;
 			sourceTree = "<group>";
 		};
-		920AD2381CCEBBBF0099974C /* slackMessageCounterUITests */ = {
+		920AD2381CCEBBBF0099974C /* DistractificationUITests */ = {
 			isa = PBXGroup;
 			children = (
 				920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */,
 				920AD23B1CCEBBBF0099974C /* Info.plist */,
 			);
-			name = slackMessageCounterUITests;
-			path = slackMessagecounterUITests;
+			path = DistractificationUITests;
 			sourceTree = "<group>";
 		};
 		A18DF890F48B017E6D23D52D /* Frameworks */ = {
