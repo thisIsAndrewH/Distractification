@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import slackMessagecounter
+@testable import Distractification
 
 class slackMessagecounterTests: XCTestCase {
     

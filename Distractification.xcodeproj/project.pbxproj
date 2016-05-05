@@ -12,8 +12,8 @@
 		920AD21F1CCEBBBF0099974C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD21E1CCEBBBF0099974C /* ViewController.swift */; };
 		920AD2211CCEBBBF0099974C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920AD2201CCEBBBF0099974C /* Assets.xcassets */; };
 		920AD2241CCEBBBF0099974C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920AD2221CCEBBBF0099974C /* Main.storyboard */; };
-		920AD22F1CCEBBBF0099974C /* slackMessagecounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD22E1CCEBBBF0099974C /* slackMessagecounterTests.swift */; };
-		920AD23A1CCEBBBF0099974C /* slackMessagecounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */; };
+		920AD22F1CCEBBBF0099974C /* DistractificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD22E1CCEBBBF0099974C /* DistractificationTests.swift */; };
+		920AD23A1CCEBBBF0099974C /* DistractificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD2391CCEBBBF0099974C /* DistractificationUITests.swift */; };
 		9260A3B11CD676A300545EE5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260A3B01CD676A300545EE5 /* Config.swift */; };
 		FCC2F490551DDD3421CA743B /* Pods_Distractification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A53461ACCDF7C4CFDF17E /* Pods_Distractification.framework */; };
 /* End PBXBuildFile section */
@@ -45,10 +45,10 @@
 		920AD2231CCEBBBF0099974C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		920AD2251CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		920AD22A1CCEBBBF0099974C /* Distractification.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Distractification.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		920AD22E1CCEBBBF0099974C /* slackMessagecounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slackMessagecounterTests.swift; sourceTree = "<group>"; };
+		920AD22E1CCEBBBF0099974C /* DistractificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistractificationTests.swift; sourceTree = "<group>"; };
 		920AD2301CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		920AD2351CCEBBBF0099974C /* Distractification.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Distractification.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slackMessagecounterUITests.swift; sourceTree = "<group>"; };
+		920AD2391CCEBBBF0099974C /* DistractificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistractificationUITests.swift; sourceTree = "<group>"; };
 		920AD23B1CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9260A3B01CD676A300545EE5 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F78A53461ACCDF7C4CFDF17E /* Pods_Distractification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Distractification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +121,7 @@
 		920AD22D1CCEBBBF0099974C /* DistractificationTests */ = {
 			isa = PBXGroup;
 			children = (
-				920AD22E1CCEBBBF0099974C /* slackMessagecounterTests.swift */,
+				920AD22E1CCEBBBF0099974C /* DistractificationTests.swift */,
 				920AD2301CCEBBBF0099974C /* Info.plist */,
 			);
 			path = DistractificationTests;
@@ -130,7 +130,7 @@
 		920AD2381CCEBBBF0099974C /* DistractificationUITests */ = {
 			isa = PBXGroup;
 			children = (
-				920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */,
+				920AD2391CCEBBBF0099974C /* DistractificationUITests.swift */,
 				920AD23B1CCEBBBF0099974C /* Info.plist */,
 			);
 			path = DistractificationUITests;
@@ -345,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				920AD22F1CCEBBBF0099974C /* slackMessagecounterTests.swift in Sources */,
+				920AD22F1CCEBBBF0099974C /* DistractificationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				920AD23A1CCEBBBF0099974C /* slackMessagecounterUITests.swift in Sources */,
+				920AD23A1CCEBBBF0099974C /* DistractificationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
