@@ -8,7 +8,7 @@
 
 import XCTest
 
-class slackMessagecounterUITests: XCTestCase {
+class DistractificationUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
