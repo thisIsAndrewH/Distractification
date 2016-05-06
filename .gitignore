@@ -63,4 +63,4 @@ fastlane/screenshots
 fastlane/test_output
 
 # Specific files
-/Distractification/Config.swift
+Distractification/Config.swift
