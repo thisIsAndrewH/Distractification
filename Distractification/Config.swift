@@ -12,5 +12,5 @@ struct Config {
     static let slackApiToken = ""
     static let googleAnalyticsToken = ""
     static let thresholdLimit = 200 //number of messages sent a day - over produces notification
-    static let timerSeconds: Double = 60*60
+    static let timerSeconds: Double = 60*15
 }

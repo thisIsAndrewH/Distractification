@@ -5,7 +5,7 @@
 ## Features
 * Queries message count of last week and last day
 * Runs on demand or on a schedule
-	* Default: every hour
+	* Default: every 15 minutes
 	* Configurable: Yes
 * Alerts user if over threshold
 	* Default: 200 messages per day
