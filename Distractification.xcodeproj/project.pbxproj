@@ -12,9 +12,10 @@
 		920AD21F1CCEBBBF0099974C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD21E1CCEBBBF0099974C /* ViewController.swift */; };
 		920AD2211CCEBBBF0099974C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920AD2201CCEBBBF0099974C /* Assets.xcassets */; };
 		920AD2241CCEBBBF0099974C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920AD2221CCEBBBF0099974C /* Main.storyboard */; };
-		920AD22F1CCEBBBF0099974C /* slackMessagecounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD22E1CCEBBBF0099974C /* slackMessagecounterTests.swift */; };
-		920AD23A1CCEBBBF0099974C /* slackMessagecounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */; };
+		920AD22F1CCEBBBF0099974C /* DistractificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD22E1CCEBBBF0099974C /* DistractificationTests.swift */; };
+		920AD23A1CCEBBBF0099974C /* DistractificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD2391CCEBBBF0099974C /* DistractificationUITests.swift */; };
 		9260A3B11CD676A300545EE5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9260A3B01CD676A300545EE5 /* Config.swift */; };
+		FCC2F490551DDD3421CA743B /* Pods_Distractification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A53461ACCDF7C4CFDF17E /* Pods_Distractification.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +37,22 @@
 
 /* Begin PBXFileReference section */
 		31BAC927AB79CD68E7CD1C1A /* Pods_slackMessagecounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_slackMessagecounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79823ECFB6984E2A544D15F5 /* Pods-slackMessagecounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-slackMessagecounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-slackMessagecounter/Pods-slackMessagecounter.release.xcconfig"; sourceTree = "<group>"; };
-		920AD2191CCEBBBF0099974C /* slackMessageCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slackMessageCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79823ECFB6984E2A544D15F5 /* Pods-Distractification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Distractification.release.xcconfig"; path = "Pods/Target Support Files/Pods-Distractification/Pods-Distractification.release.xcconfig"; sourceTree = "<group>"; };
+		920AD2191CCEBBBF0099974C /* Distractification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Distractification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		920AD21C1CCEBBBF0099974C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		920AD21E1CCEBBBF0099974C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		920AD2201CCEBBBF0099974C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		920AD2231CCEBBBF0099974C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		920AD2251CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		920AD22A1CCEBBBF0099974C /* slackMessageCounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slackMessageCounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		920AD22E1CCEBBBF0099974C /* slackMessagecounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slackMessagecounterTests.swift; sourceTree = "<group>"; };
+		920AD22A1CCEBBBF0099974C /* Distractification.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Distractification.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		920AD22E1CCEBBBF0099974C /* DistractificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistractificationTests.swift; sourceTree = "<group>"; };
 		920AD2301CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		920AD2351CCEBBBF0099974C /* slackMessageCounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = slackMessageCounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slackMessagecounterUITests.swift; sourceTree = "<group>"; };
+		920AD2351CCEBBBF0099974C /* Distractification.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Distractification.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		920AD2391CCEBBBF0099974C /* DistractificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistractificationUITests.swift; sourceTree = "<group>"; };
 		920AD23B1CCEBBBF0099974C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9260A3B01CD676A300545EE5 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		F96937290F13648044FC7559 /* Pods-slackMessagecounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-slackMessagecounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-slackMessagecounter/Pods-slackMessagecounter.debug.xcconfig"; sourceTree = "<group>"; };
+		F78A53461ACCDF7C4CFDF17E /* Pods_Distractification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Distractification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96937290F13648044FC7559 /* Pods-Distractification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Distractification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Distractification/Pods-Distractification.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DAE6FBC0D124D58E2F271C8 /* Pods_slackMessagecounter.framework in Frameworks */,
+				FCC2F490551DDD3421CA743B /* Pods_Distractification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +85,9 @@
 		920AD2101CCEBBBF0099974C = {
 			isa = PBXGroup;
 			children = (
-				920AD21B1CCEBBBF0099974C /* slackMessageCounter */,
-				920AD22D1CCEBBBF0099974C /* slackMessageCounterTests */,
-				920AD2381CCEBBBF0099974C /* slackMessageCounterUITests */,
+				920AD21B1CCEBBBF0099974C /* Distractification */,
+				920AD22D1CCEBBBF0099974C /* DistractificationTests */,
+				920AD2381CCEBBBF0099974C /* DistractificationUITests */,
 				920AD21A1CCEBBBF0099974C /* Products */,
 				B669677E68006D2A75D4AFA7 /* Pods */,
 				A18DF890F48B017E6D23D52D /* Frameworks */,
@@ -94,14 +97,14 @@
 		920AD21A1CCEBBBF0099974C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				920AD2191CCEBBBF0099974C /* slackMessageCounter.app */,
-				920AD22A1CCEBBBF0099974C /* slackMessageCounter.xctest */,
-				920AD2351CCEBBBF0099974C /* slackMessageCounter.xctest */,
+				920AD2191CCEBBBF0099974C /* Distractification.app */,
+				920AD22A1CCEBBBF0099974C /* Distractification.xctest */,
+				920AD2351CCEBBBF0099974C /* Distractification.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		920AD21B1CCEBBBF0099974C /* slackMessageCounter */ = {
+		920AD21B1CCEBBBF0099974C /* Distractification */ = {
 			isa = PBXGroup;
 			children = (
 				920AD21C1CCEBBBF0099974C /* AppDelegate.swift */,
@@ -111,34 +114,32 @@
 				920AD2221CCEBBBF0099974C /* Main.storyboard */,
 				920AD2251CCEBBBF0099974C /* Info.plist */,
 			);
-			name = slackMessageCounter;
-			path = slackMessagecounter;
+			path = Distractification;
 			sourceTree = "<group>";
 		};
-		920AD22D1CCEBBBF0099974C /* slackMessageCounterTests */ = {
+		920AD22D1CCEBBBF0099974C /* DistractificationTests */ = {
 			isa = PBXGroup;
 			children = (
-				920AD22E1CCEBBBF0099974C /* slackMessagecounterTests.swift */,
+				920AD22E1CCEBBBF0099974C /* DistractificationTests.swift */,
 				920AD2301CCEBBBF0099974C /* Info.plist */,
 			);
-			name = slackMessageCounterTests;
-			path = slackMessagecounterTests;
+			path = DistractificationTests;
 			sourceTree = "<group>";
 		};
-		920AD2381CCEBBBF0099974C /* slackMessageCounterUITests */ = {
+		920AD2381CCEBBBF0099974C /* DistractificationUITests */ = {
 			isa = PBXGroup;
 			children = (
-				920AD2391CCEBBBF0099974C /* slackMessagecounterUITests.swift */,
+				920AD2391CCEBBBF0099974C /* DistractificationUITests.swift */,
 				920AD23B1CCEBBBF0099974C /* Info.plist */,
 			);
-			name = slackMessageCounterUITests;
-			path = slackMessagecounterUITests;
+			path = DistractificationUITests;
 			sourceTree = "<group>";
 		};
 		A18DF890F48B017E6D23D52D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				31BAC927AB79CD68E7CD1C1A /* Pods_slackMessagecounter.framework */,
+				F78A53461ACCDF7C4CFDF17E /* Pods_Distractification.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,8 +147,8 @@
 		B669677E68006D2A75D4AFA7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F96937290F13648044FC7559 /* Pods-slackMessagecounter.debug.xcconfig */,
-				79823ECFB6984E2A544D15F5 /* Pods-slackMessagecounter.release.xcconfig */,
+				F96937290F13648044FC7559 /* Pods-Distractification.debug.xcconfig */,
+				79823ECFB6984E2A544D15F5 /* Pods-Distractification.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -155,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		920AD2181CCEBBBF0099974C /* slackMessagecounter */ = {
+		920AD2181CCEBBBF0099974C /* Distractification */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 920AD23E1CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounter" */;
+			buildConfigurationList = 920AD23E1CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "Distractification" */;
 			buildPhases = (
 				3FC21873924A592AE60BDBA5 /* Check Pods Manifest.lock */,
 				920AD2151CCEBBBF0099974C /* Sources */,
@@ -170,14 +171,14 @@
 			);
 			dependencies = (
 			);
-			name = slackMessagecounter;
+			name = Distractification;
 			productName = slackMessagecounter;
-			productReference = 920AD2191CCEBBBF0099974C /* slackMessageCounter.app */;
+			productReference = 920AD2191CCEBBBF0099974C /* Distractification.app */;
 			productType = "com.apple.product-type.application";
 		};
-		920AD2291CCEBBBF0099974C /* slackMessagecounterTests */ = {
+		920AD2291CCEBBBF0099974C /* DistractificationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 920AD2411CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounterTests" */;
+			buildConfigurationList = 920AD2411CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "DistractificationTests" */;
 			buildPhases = (
 				920AD2261CCEBBBF0099974C /* Sources */,
 				920AD2271CCEBBBF0099974C /* Frameworks */,
@@ -188,14 +189,14 @@
 			dependencies = (
 				920AD22C1CCEBBBF0099974C /* PBXTargetDependency */,
 			);
-			name = slackMessagecounterTests;
+			name = DistractificationTests;
 			productName = slackMessagecounterTests;
-			productReference = 920AD22A1CCEBBBF0099974C /* slackMessageCounter.xctest */;
+			productReference = 920AD22A1CCEBBBF0099974C /* Distractification.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		920AD2341CCEBBBF0099974C /* slackMessagecounterUITests */ = {
+		920AD2341CCEBBBF0099974C /* DistractificationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 920AD2441CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounterUITests" */;
+			buildConfigurationList = 920AD2441CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "DistractificationUITests" */;
 			buildPhases = (
 				920AD2311CCEBBBF0099974C /* Sources */,
 				920AD2321CCEBBBF0099974C /* Frameworks */,
@@ -206,9 +207,9 @@
 			dependencies = (
 				920AD2371CCEBBBF0099974C /* PBXTargetDependency */,
 			);
-			name = slackMessagecounterUITests;
+			name = DistractificationUITests;
 			productName = slackMessagecounterUITests;
-			productReference = 920AD2351CCEBBBF0099974C /* slackMessageCounter.xctest */;
+			productReference = 920AD2351CCEBBBF0099974C /* Distractification.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -234,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 920AD2141CCEBBBF0099974C /* Build configuration list for PBXProject "slackMessageCounter" */;
+			buildConfigurationList = 920AD2141CCEBBBF0099974C /* Build configuration list for PBXProject "Distractification" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -247,9 +248,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				920AD2181CCEBBBF0099974C /* slackMessagecounter */,
-				920AD2291CCEBBBF0099974C /* slackMessagecounterTests */,
-				920AD2341CCEBBBF0099974C /* slackMessagecounterUITests */,
+				920AD2181CCEBBBF0099974C /* Distractification */,
+				920AD2291CCEBBBF0099974C /* DistractificationTests */,
+				920AD2341CCEBBBF0099974C /* DistractificationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-slackMessagecounter/Pods-slackMessagecounter-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Distractification/Pods-Distractification-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D8AC10AB2E0440858FAA1D11 /* Embed Pods Frameworks */ = {
@@ -323,7 +324,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-slackMessagecounter/Pods-slackMessagecounter-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Distractification/Pods-Distractification-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -343,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				920AD22F1CCEBBBF0099974C /* slackMessagecounterTests.swift in Sources */,
+				920AD22F1CCEBBBF0099974C /* DistractificationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				920AD23A1CCEBBBF0099974C /* slackMessagecounterUITests.swift in Sources */,
+				920AD23A1CCEBBBF0099974C /* DistractificationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,12 +361,12 @@
 /* Begin PBXTargetDependency section */
 		920AD22C1CCEBBBF0099974C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 920AD2181CCEBBBF0099974C /* slackMessagecounter */;
+			target = 920AD2181CCEBBBF0099974C /* Distractification */;
 			targetProxy = 920AD22B1CCEBBBF0099974C /* PBXContainerItemProxy */;
 		};
 		920AD2371CCEBBBF0099974C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 920AD2181CCEBBBF0099974C /* slackMessagecounter */;
+			target = 920AD2181CCEBBBF0099974C /* Distractification */;
 			targetProxy = 920AD2361CCEBBBF0099974C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -466,27 +467,27 @@
 		};
 		920AD23F1CCEBBBF0099974C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F96937290F13648044FC7559 /* Pods-slackMessagecounter.debug.xcconfig */;
+			baseConfigurationReference = F96937290F13648044FC7559 /* Pods-Distractification.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = slackMessagecounter/Info.plist;
+				INFOPLIST_FILE = Distractification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessageCounter";
-				PRODUCT_NAME = slackMessageCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.Distractification";
+				PRODUCT_NAME = Distractification;
 			};
 			name = Debug;
 		};
 		920AD2401CCEBBBF0099974C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79823ECFB6984E2A544D15F5 /* Pods-slackMessagecounter.release.xcconfig */;
+			baseConfigurationReference = 79823ECFB6984E2A544D15F5 /* Pods-Distractification.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = slackMessagecounter/Info.plist;
+				INFOPLIST_FILE = Distractification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessageCounter";
-				PRODUCT_NAME = slackMessageCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.Distractification";
+				PRODUCT_NAME = Distractification;
 			};
 			name = Release;
 		};
@@ -495,11 +496,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = slackMessagecounterTests/Info.plist;
+				INFOPLIST_FILE = Distractification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounterTests";
-				PRODUCT_NAME = slackMessageCounter;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slackMessageCounter.app/Contents/MacOS/slackMessageCounter";
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.DistractificationTests";
+				PRODUCT_NAME = Distractification;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Distractification.app/Contents/MacOS/Distractification";
 			};
 			name = Debug;
 		};
@@ -508,11 +509,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = slackMessagecounterTests/Info.plist;
+				INFOPLIST_FILE = Distractification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounterTests";
-				PRODUCT_NAME = slackMessageCounter;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/slackMessageCounter.app/Contents/MacOS/slackMessageCounter";
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.DistractificationTests";
+				PRODUCT_NAME = Distractification;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Distractification.app/Contents/MacOS/Distractification";
 			};
 			name = Release;
 		};
@@ -520,11 +521,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = slackMessagecounterUITests/Info.plist;
+				INFOPLIST_FILE = DistractificationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounterUITests";
-				PRODUCT_NAME = slackMessageCounter;
-				TEST_TARGET_NAME = slackMessagecounter;
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.DistractificationUITests";
+				PRODUCT_NAME = Distractification;
+				TEST_TARGET_NAME = Distractification;
 			};
 			name = Debug;
 		};
@@ -532,18 +533,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = slackMessagecounterUITests/Info.plist;
+				INFOPLIST_FILE = DistractificationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.slackMessagecounterUITests";
-				PRODUCT_NAME = slackMessageCounter;
-				TEST_TARGET_NAME = slackMessagecounter;
+				PRODUCT_BUNDLE_IDENTIFIER = "andrew-harris.com.DistractificationUITests";
+				PRODUCT_NAME = Distractification;
+				TEST_TARGET_NAME = Distractification;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		920AD2141CCEBBBF0099974C /* Build configuration list for PBXProject "slackMessageCounter" */ = {
+		920AD2141CCEBBBF0099974C /* Build configuration list for PBXProject "Distractification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920AD23C1CCEBBBF0099974C /* Debug */,
@@ -552,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		920AD23E1CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounter" */ = {
+		920AD23E1CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "Distractification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920AD23F1CCEBBBF0099974C /* Debug */,
@@ -561,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		920AD2411CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounterTests" */ = {
+		920AD2411CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "DistractificationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920AD2421CCEBBBF0099974C /* Debug */,
@@ -570,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		920AD2441CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "slackMessagecounterUITests" */ = {
+		920AD2441CCEBBBF0099974C /* Build configuration list for PBXNativeTarget "DistractificationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				920AD2451CCEBBBF0099974C /* Debug */,

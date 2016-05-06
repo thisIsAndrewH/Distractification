@@ -1,4 +1,5 @@
-# Slack Message Counter #
+# Distractification: A Slack Message Counter #
+
 **Goal:** To gain a better understanding of how often messages are sent in a given day or week.
 
 ## Features
@@ -19,3 +20,7 @@ Add your token to the Config.swift file before running.
 If interested in helping, please email me for collaboration: <aharris86@gmail.com>
 
 Follow me on Twitter: [@thisIsAndrewH](http://www.twitter.com/thisIsAndrewH)
+
+-----
+
+Disclaimer: This application was not created by, affiliated with, or supported by Slack Technologies, Inc.
