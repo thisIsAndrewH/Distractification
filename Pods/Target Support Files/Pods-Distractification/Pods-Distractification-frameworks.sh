@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-slackMessagecounter/SwiftyJSON.framework"
+  install_framework "Pods-Distractification/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-slackMessagecounter/SwiftyJSON.framework"
+  install_framework "Pods-Distractification/SwiftyJSON.framework"
 fi
