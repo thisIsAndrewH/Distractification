@@ -12,7 +12,7 @@
 import Cocoa
 
 struct Config_template {
-    static let slackApiToken = "xoxp-2279670432-2741918533-39834281856-05e7769512"
+    static let slackApiToken = ""
     static let googleAnalyticsToken = ""
     static let thresholdLimit = 200 //number of messages sent a day - over produces notification
     static let timerSeconds: Double = 60*15
