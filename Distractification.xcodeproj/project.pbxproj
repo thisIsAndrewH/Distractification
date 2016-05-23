@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DAE6FBC0D124D58E2F271C8 /* Pods_slackMessagecounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BAC927AB79CD68E7CD1C1A /* Pods_slackMessagecounter.framework */; };
 		920AD21D1CCEBBBF0099974C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD21C1CCEBBBF0099974C /* AppDelegate.swift */; };
 		920AD21F1CCEBBBF0099974C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AD21E1CCEBBBF0099974C /* ViewController.swift */; };
 		920AD2211CCEBBBF0099974C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920AD2201CCEBBBF0099974C /* Assets.xcassets */; };
@@ -62,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DAE6FBC0D124D58E2F271C8 /* Pods_slackMessagecounter.framework in Frameworks */,
 				FCC2F490551DDD3421CA743B /* Pods_Distractification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
